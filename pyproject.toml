@@ -9,6 +9,7 @@ packages = [{include = "pv_prediction"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 polars = "^0.17.0"
+darts = "^0.24.0"
 
 [tool.poetry.group.dev.dependencies]
 notebook = "^6.5.4"
