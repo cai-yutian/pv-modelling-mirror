@@ -1533,6 +1533,40 @@ docs = ["sphinx (>=5)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
 test = ["coverage", "mock (>=4)", "pytest (>=7)", "pytest-cov", "pytest-mock (>=3)"]
 
 [[package]]
+name = "h5py"
+version = "3.9.0"
+description = "Read and write HDF5 files from Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "h5py-3.9.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:eb7bdd5e601dd1739698af383be03f3dad0465fe67184ebd5afca770f50df9d6"},
+    {file = "h5py-3.9.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:78e44686334cbbf2dd21d9df15823bc38663f27a3061f6a032c68a3e30c47bf7"},
+    {file = "h5py-3.9.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f68b41efd110ce9af1cbe6fa8af9f4dcbadace6db972d30828b911949e28fadd"},
+    {file = "h5py-3.9.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:12aa556d540f11a2cae53ea7cfb94017353bd271fb3962e1296b342f6550d1b8"},
+    {file = "h5py-3.9.0-cp310-cp310-win_amd64.whl", hash = "sha256:d97409e17915798029e297a84124705c8080da901307ea58f29234e09b073ddc"},
+    {file = "h5py-3.9.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:551e358db05a874a0f827b22e95b30092f2303edc4b91bb62ad2f10e0236e1a0"},
+    {file = "h5py-3.9.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:6822a814b9d8b8363ff102f76ea8d026f0ca25850bb579d85376029ee3e73b93"},
+    {file = "h5py-3.9.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:54f01202cdea754ab4227dd27014bdbd561a4bbe4b631424fd812f7c2ce9c6ac"},
+    {file = "h5py-3.9.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:64acceaf6aff92af091a4b83f6dee3cf8d3061f924a6bb3a33eb6c4658a8348b"},
+    {file = "h5py-3.9.0-cp311-cp311-win_amd64.whl", hash = "sha256:804c7fb42a34c8ab3a3001901c977a5c24d2e9c586a0f3e7c0a389130b4276fc"},
+    {file = "h5py-3.9.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:8d9492391ff5c3c80ec30ae2fe82a3f0efd1e750833739c25b0d090e3be1b095"},
+    {file = "h5py-3.9.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:9da9e7e63376c32704e37ad4cea2dceae6964cee0d8515185b3ab9cbd6b947bc"},
+    {file = "h5py-3.9.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a4e20897c88759cbcbd38fb45b507adc91af3e0f67722aa302d71f02dd44d286"},
+    {file = "h5py-3.9.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:dbf5225543ca35ce9f61c950b73899a82be7ba60d58340e76d0bd42bf659235a"},
+    {file = "h5py-3.9.0-cp38-cp38-win_amd64.whl", hash = "sha256:36408f8c62f50007d14e000f9f3acf77e103b9e932c114cbe52a3089e50ebf94"},
+    {file = "h5py-3.9.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:23e74b878bbe1653ab34ca49b83cac85529cd0b36b9d625516c5830cc5ca2eac"},
+    {file = "h5py-3.9.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:3f457089c5d524b7998e3649bc63240679b8fb0a3859ea53bbb06841f3d755f1"},
+    {file = "h5py-3.9.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a6284061f3214335e1eec883a6ee497dbe7a79f19e6a57fed2dd1f03acd5a8cb"},
+    {file = "h5py-3.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:95f7a745efd0d56076999b52e8da5fad5d30823bac98b59c68ae75588d09991a"},
+    {file = "h5py-3.9.0-cp39-cp39-win_amd64.whl", hash = "sha256:79bbca34696c6f9eeeb36a91776070c49a060b2879828e2c8fa6c58b8ed10dd1"},
+    {file = "h5py-3.9.0.tar.gz", hash = "sha256:e604db6521c1e367c6bd7fad239c847f53cc46646f2d2651372d05ae5e95f817"},
+]
+
+[package.dependencies]
+numpy = ">=1.17.3"
+
+[[package]]
 name = "hijri-converter"
 version = "2.2.4"
 description = "Accurate Hijri-Gregorian dates converter based on the Umm al-Qura calendar"
@@ -3523,6 +3557,32 @@ files = [
 tests = ["pytest"]
 
 [[package]]
+name = "pvlib"
+version = "0.9.5"
+description = "A set of functions and classes for simulating the performance of photovoltaic energy systems."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pvlib-0.9.5-py3-none-any.whl", hash = "sha256:e0932ba280e999284f0cdec4def09bdf7a79b8f681ce5262ad857facac92b92e"},
+    {file = "pvlib-0.9.5.tar.gz", hash = "sha256:1f844973ca51f8de3e32514b5dbce83ddf0766e7fe9d7f3bb1a3088870053768"},
+]
+
+[package.dependencies]
+h5py = "*"
+numpy = ">=1.16.0"
+pandas = ">=0.25.0"
+pytz = "*"
+requests = "*"
+scipy = ">=1.4.0"
+
+[package.extras]
+all = ["cftime (>=1.1.1)", "cython", "docutils (==0.15.2)", "ephem", "ipython", "matplotlib", "netcdf4", "nrel-pysam", "numba", "pillow", "pvfactors", "pydata-sphinx-theme (==0.8.1)", "pytest", "pytest-cov", "pytest-mock", "pytest-remotedata", "pytest-rerunfailures", "pytest-timeout", "requests-mock", "siphon", "sphinx (==4.5.0)", "sphinx-gallery", "sphinx-toggleprompt (>=0.0.5)", "statsmodels"]
+doc = ["docutils (==0.15.2)", "ipython", "matplotlib", "netcdf4", "pillow", "pvfactors", "pydata-sphinx-theme (==0.8.1)", "siphon", "sphinx (==4.5.0)", "sphinx-gallery", "sphinx-toggleprompt (>=0.0.5)"]
+optional = ["cftime (>=1.1.1)", "cython", "ephem", "netcdf4", "nrel-pysam", "numba", "pvfactors", "siphon", "statsmodels"]
+test = ["pytest", "pytest-cov", "pytest-mock", "pytest-remotedata", "pytest-rerunfailures", "pytest-timeout", "requests-mock"]
+
+[[package]]
 name = "pyarrow"
 version = "11.0.0"
 description = "Python library for Apache Arrow"
@@ -4028,6 +4088,35 @@ triad = ">=0.8.0"
 all = ["cloudpickle (>=1.4.0)", "dask[dataframe,distributed]", "modin[ray]"]
 dask = ["cloudpickle (>=1.4.0)", "dask[dataframe,distributed]"]
 ray = ["modin[ray] (>=0.8.1.1)", "pandas (>=1.1.2)"]
+
+[[package]]
+name = "rdtools"
+version = "2.1.5"
+description = "Functions for reproducible timeseries analysis of photovoltaic systems."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "rdtools-2.1.5-py2.py3-none-any.whl", hash = "sha256:4baff37902f1f52b5161817ec94e81e24cbcd9f12a4b91d0c23f35e51dc9bec2"},
+    {file = "rdtools-2.1.5.tar.gz", hash = "sha256:ea3b6244de5a080d399ebbb7441fa397baeae8b6d938d1b9f81ce572665fa3b3"},
+]
+
+[package.dependencies]
+h5py = ">=2.8.0"
+matplotlib = ">=3.0.0"
+numpy = ">=1.15"
+pandas = ">=0.23.2,<0.24.0 || >0.24.0,<1.0.0 || >1.0.0,<1.0.1 || >1.0.1"
+plotly = ">=4.0.0"
+pvlib = ">=0.7.0,<0.10.0"
+scikit-learn = ">=0.22.0"
+scipy = ">=1.1.0"
+statsmodels = ">=0.9.0"
+xgboost = ">=1.3.3"
+
+[package.extras]
+all = ["coverage", "flake8", "ipython", "nbsphinx (==0.8.8)", "nbsphinx-link (==1.3.0)", "nbval (==0.9.6)", "pytest (>=3.6.3)", "pytest-mock", "sphinx (==4.5.0)", "sphinx-gallery (==0.8.1)", "sphinx-rtd-theme (==0.5.2)"]
+doc = ["ipython", "nbsphinx (==0.8.8)", "nbsphinx-link (==1.3.0)", "sphinx (==4.5.0)", "sphinx-gallery (==0.8.1)", "sphinx-rtd-theme (==0.5.2)"]
+test = ["coverage", "flake8", "nbval (==0.9.6)", "pytest (>=3.6.3)", "pytest-mock"]
 
 [[package]]
 name = "requests"
@@ -5257,4 +5346,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "88ca4f5668ad12d1301f4c87596810d42b9ac602a9f61eaeb0bf0b1b2d857cd1"
+content-hash = "28fe6c64a46f995e467441397822b2363d64fac3bf725a04a19d67e2fb2f344b"
